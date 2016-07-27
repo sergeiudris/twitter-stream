@@ -66,7 +66,7 @@ io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
 
   socket.on('disconnect', function (e) {
-    console.log(`${socket.id} connected`);
+    console.log(`${socket.id} disconnected`);
   });
   socket.on('m', function (o) {
     io.emit("m", { id: "server", msg: o });
