@@ -1,10 +1,10 @@
-const http         = require('http'),
-      https         = require('http'),
-      fs           = require('fs'),
-      path         = require('path'),
-      contentTypes = require('./utils/content-types'),
-      sysInfo      = require('./utils/sys-info'),
-      env          = process.env;
+const http = require('http'),
+  https = require('http'),
+  fs = require('fs'),
+  path = require('path'),
+  contentTypes = require('./utils/content-types'),
+  sysInfo = require('./utils/sys-info'),
+  env = process.env;
 
 const PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000;
 
@@ -60,16 +60,20 @@ let server = http.createServer(function (req, res) {
 });
 var io = require('socket.io')(server);
 io.on('connection', function (socket) {
-    console.log("a user connected");
+  console.log(`${socket.id} connected`);
 
-    socket.on('disconnect', function (e) {
-        console.log("disconnect");
-    });
-    socket.on('chat message', function (o) {
-        socket.broadcast.emit("chat message", o);
-    });
+  socket.on('disconnect', function (e) {
+    console.log(`${socket.id} connected`);
+  });
+  socket.on('m', function (o) {
+    io.emit("m", { id: "server", msg: o });
+  });
+  io.emit("m", { id: "server", msg: `new user connected ${socket.id}` });
 });
 
-server.listen(PORT, env.OPENSHIFT_NODEJS_IP  || 'localhost', function () {
+console.log(`port: ${PORT}`);
+console.log(`ip: ${env.OPENSHIFT_NODEJS_IP || 'localhost'}`);
+
+server.listen(PORT, env.OPENSHIFT_NODEJS_IP || 'localhost', function () {
   console.log(`Application worker ${process.pid} started...`);
 });
