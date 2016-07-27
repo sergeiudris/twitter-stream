@@ -6,7 +6,7 @@ const http = require('http'),
   sysInfo = require('./utils/sys-info'),
   env = process.env;
 
-const PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000;
+const PORT = 8000;
 
 //const Twit = require('twit')
 // var sserver = require('https').createServer({},);
