@@ -6,7 +6,6 @@ const http = require('http'),
   sysInfo = require('./utils/sys-info'),
   env = process.env;
 
-const PORT = 8000;
 
 //const Twit = require('twit')
 // var sserver = require('https').createServer({},);
@@ -27,6 +26,10 @@ const PORT = 8000;
 // }) 
 
 let server = http.createServer(function (req, res) {
+  
+  //res.writeHead(200);
+  //res.setHeader('Access-Control-Allow-Origin', '*');
+  //res.end();
   let url = req.url;
   if (url == '/') {
     url += 'index.html';
@@ -58,7 +61,7 @@ let server = http.createServer(function (req, res) {
     });
   }
 });
-var io = require('socket.io')(server, {forceNew:true });
+var io = require('socket.io')(server);
 io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
 
@@ -70,6 +73,10 @@ io.on('connection', function (socket) {
   });
   io.emit("m", { id: "server", msg: `new user connected ${socket.id}` });
 });
+
+
+
+const PORT = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
 console.log(`port: ${PORT}`);
 console.log(`ip: ${env.OPENSHIFT_NODEJS_IP || 'localhost'}`);
