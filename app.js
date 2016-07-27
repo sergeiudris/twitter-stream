@@ -34,7 +34,7 @@ let server = http.createServer(function (req, res) {
 
   // IMPORTANT: Your application HAS to respond to GET /health with status 200
   //            for OpenShift health monitoring
-
+  res.setHeader('Access-Control-Allow-Origin', '*');
   if (url == '/health') {
     res.writeHead(200);
     res.end();
@@ -58,7 +58,7 @@ let server = http.createServer(function (req, res) {
     });
   }
 });
-var io = require('socket.io')(server);
+var io = require('socket.io')(server, {forceNew:true });
 io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
 
