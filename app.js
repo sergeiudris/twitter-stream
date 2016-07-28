@@ -7,7 +7,6 @@ const http = require('http'),
   env = process.env,
   Twit = require('twit')
   ;
- env.OPENSHIFT_NODEJS_PORT = 2000;
 let timeoutId = 0;
 
 let server = http.createServer(function (req, res) {
