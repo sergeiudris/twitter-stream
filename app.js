@@ -91,8 +91,8 @@ stream.on('message', function (msg) {
 })
 
 stream.on('connect', function (request) {
-  console.log("twitter stream connect");
   io.emit('message', { id: "server", request: request });
+  console.log("stream 'connect' event");
 })
 
 stream.on('tweet', function (tweet) {
