@@ -144,6 +144,7 @@ io.on('connection', function (socket) {
         socket.leave(room);
       }
     })
+    console.log(Object.keys(socket.rooms));
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
