@@ -20,19 +20,23 @@ const themes = {
 
 var tweets = {};
 
-function emplace(tweet) {
+function storeTweet(tweet) {
   const promises = [];
   var text = tweet.text;
   //in case we decide to break or return
   for (var p in themes) {
     promises.push(new Promise((y, f) => {
-      if (new RegExp(themes[p].join('|'), 'gi').test(text)) {
+      let quote = tweet.quoted_status ? tweet.quoted_status.text : "";
+      let hashtags = tweet.entities.hashtags.reduce((p, c, i, a) => { return [p, c.text].join(" #") }, "")
+      if (new RegExp(themes[p].join('|'), 'gi').test([text, hashtags, quote].join(''))) {
         y(p);
       }
       y(false)
     }))
   }
-  return Promise.all(promises).then((values) => {
+  return Promise.all(promises).then((vs) => {
+    return [tweet, vs.filter((v) => { return v ? true : false; })];
+  }).then(([tweet, values]) => {
     values.forEach((value, i, a) => {
       if (value) {
         tweets[value] = tweets[value] || [];
@@ -40,9 +44,10 @@ function emplace(tweet) {
         tweets[value].splice(0, tweets[value].length - 50);
       }
     })
-    return new Promise(values.filter((e) => { return e; }))
+    return values;
   });
 }
+
 
 let server = http.createServer(function (req, res) {
 
@@ -89,6 +94,16 @@ var T = new Twit({
   access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
   //app_only_auth: true
 })
+// T = new Twit({
+//     consumer_key: 'YS2BntFcYVkTdf2kju0sVWIFy',
+//     consumer_secret: '9gw8ACgOGKO5NMEaqi7zp3QV0ATG7Hnx8aVYaGkAVLPwiTELLR',
+//     access_token: '	757606965895987201-dxD7Y2pDfLryYTD2zRzBP6qVx2l3xn2',
+//     access_token_secret: 'N38Bzi6csid84B9EBJLGMFl0E1sPNKhmG1nZBKhG9GFO2',
+//     //  app_only_auth: true
+// })
+
+//match({ text: "here is nba nFL" }).then((vs) => { console.log(tweets);console.log(vs) });
+
 var stream = T.stream('statuses/filter', { track: Object.keys(themes).map((e) => themes[e].join(',')).join(','), language: 'en' })
 stream.isStopped = false;
 io.on('connection', function (socket) {
@@ -148,10 +163,15 @@ stream.on('reconnect', function (request, response, connectInterval) {
 })
 
 stream.on('tweet', function (tweet) {
-  //console.log("tweet");
   if (tweet.user && tweet.user.followers_count > 5000) {
-    let p = emplace(tweet);
-    p.then((matches) => {
+    let p = storeTweet(tweet).then((matches) => {
+      // fs.appendFile("tweets.json", JSON.stringify(matches));
+      // fs.appendFile("tweets.json", JSON.stringify(tweet));
+      // console.log(tweet.text);
+      // console.log(matches);
+      // Object.keys(tweets).forEach((e, i, a) => {
+      //   console.log(`${e}: ${tweets[e].length}`);
+      // })
       matches.forEach((e, i, a) => {
         io.to(e).emit('tweet', tweet);
       })
@@ -171,7 +191,7 @@ stream.on('error', function (err) {
   stream.isStopped = true;
 })
 
-const PORT = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+const PORT = process.env.OPENSHIFT_NODEJS_PORT || 2000;
 
 console.log(`port: ${PORT}`);
 console.log(`ip: ${env.OPENSHIFT_NODEJS_IP || 'localhost'}`);
