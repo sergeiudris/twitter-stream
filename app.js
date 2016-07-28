@@ -144,10 +144,10 @@ io.on('connection', function (socket) {
         socket.leave(room);
       }
     })
-    console.log(Object.keys(socket.rooms));
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
+    console.log(Object.keys(socket.rooms));
     cb(themes.reduce((p, c, i, a) => {
       if (!p[c]) {
         p[c] = tweets[c] ? tweets[c].slice(-10) : [];
