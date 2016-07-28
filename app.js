@@ -49,7 +49,7 @@ let server = http.createServer(function (req, res) {
 var io = require('socket.io')(server);
 const tweets = [];
 
-T = new Twit({
+const T = new Twit({
   consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
   consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
   access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
