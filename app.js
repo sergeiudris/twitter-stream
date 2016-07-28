@@ -134,7 +134,7 @@ io.on('connection', function (socket) {
     io.emit("message", { id: socket.id, data: o });
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
-  socket.on('THEMES', function (themes, cb) {
+  socket.on('themes', function (themes, cb) {
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
