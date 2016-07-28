@@ -83,7 +83,7 @@ io.on('connection', function (socket) {
     io.emit("message", { id: socket.id, data: o });
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
-   socket.emit('tweets', tweets.splice(-10));
+   socket.emit('tweets', tweets.slice(-10));
 });
 
 
