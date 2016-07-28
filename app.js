@@ -98,7 +98,8 @@ stream.on('connect', function (request) {
 
 stream.on('tweet', function (tweet) {
   if (tweet.user && tweet.user.followers_count > 5000) {
-    tweets.push(tweet).splice(-50);
+    tweets.push(tweet);
+    tweets.splice(-50);
     io.emit('tweet', tweet);
   }
 })
