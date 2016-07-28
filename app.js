@@ -9,6 +9,41 @@ const http = require('http'),
   ;
 let timeoutId = 0;
 
+const themes = {
+  "nba": ["nba"],
+  "football": ["la liga", "premierleague", "bundesliga", "mourinho", "wenger", "guardiola"],
+  "nhl": ["nhl"],
+  "nfl": ["nfl"],
+  "olympics": ["olympic"],
+  "tennis": ["federer", "nadal", "djokovic", "atp", "us open"]
+}
+
+var tweets = {};
+
+function emplace(tweet) {
+  const promises = [];
+  var text = tweet.text;
+  //in case we decide to break or return
+  for (var p in themes) {
+    promises.push(new Promise((y, f) => {
+      if (new RegExp(themes[p].join('|'), 'gi').test(text)) {
+        y(p);
+      }
+      y(false)
+    }))
+  }
+  return Promise.all(promises).then((values) => {
+    values.forEach((value, i, a) => {
+      if (value) {
+        tweets[value] = tweets[value] || [];
+        tweets[value].push(tweet);
+        tweets[value].splice(0, tweets[value].length - 50);
+      }
+    })
+    return new Promise(values.filter((e) => { return e; }))
+  });
+}
+
 let server = http.createServer(function (req, res) {
 
   //res.writeHead(200);
@@ -46,7 +81,6 @@ let server = http.createServer(function (req, res) {
   }
 });
 var io = require('socket.io')(server);
-const tweets = [];
 
 var T = new Twit({
   consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
@@ -55,7 +89,7 @@ var T = new Twit({
   access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
   //app_only_auth: true
 })
-var stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
+var stream = T.stream('statuses/filter', { track: Object.keys(themes).map((e) => themes[e].join(',')).join(','), language: 'en' })
 stream.isStopped = false;
 io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
@@ -73,7 +107,9 @@ io.on('connection', function (socket) {
       timeoutId = setTimeout(() => {
         stream.stop();
         stream.isStopped = true;
-        tweets.splice(0);
+        Object.keys(tweets).forEach(function (e) {
+          tweets[e].splice(0);
+        })
         console.log("stream has been stopped");
       }, 3600 * 1000);
     }
@@ -83,7 +119,16 @@ io.on('connection', function (socket) {
     io.emit("message", { id: socket.id, data: o });
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
-   socket.emit('tweets', tweets.slice(-10));
+  socket.on('themes', function (themes, cb) {
+    themes.forEach((e,i,a)=>{
+      socket.join(e.toLowerCase());
+    })
+    cb(themes.reduce((p,c,i,a)=>{
+      if(!p[c]){
+        p[c] = themes[c] ? themes[c].slice(-10):[]
+      }
+    },{}).slice(-10));
+  });
 });
 
 
@@ -92,21 +137,22 @@ stream.on('message', function (msg) {
 })
 
 stream.on('connect', function (request) {
- 
+
   console.log("stream 'connect' event");
 })
 stream.on('reconnect', function (request, response, connectInterval) {
 
-  //TODO
+  console.log("reconnect attempt");
 
 })
 
 stream.on('tweet', function (tweet) {
   //console.log("tweet");
   if (tweet.user && tweet.user.followers_count > 5000) {
-    tweets.push(tweet);
-    tweets.splice(0,tweets.length-50);
-    io.emit('tweet', tweet);
+    let matches = emplace(tweet);
+    matches.forEach((e,i,a)=>{
+      io.to(e).emit('tweet',tweet);
+    })
   }
 })
 
