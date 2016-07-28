@@ -94,6 +94,11 @@ stream.on('connect', function (request) {
   io.emit('message', { id: "server", request: request });
   console.log("stream 'connect' event");
 })
+stream.on('reconnect', function (request, response, connectInterval) {
+
+  //TODO
+
+})
 
 stream.on('tweet', function (tweet) {
   //console.log("tweet");
