@@ -125,9 +125,10 @@ io.on('connection', function (socket) {
     })
     cb(themes.reduce((p, c, i, a) => {
       if (!p[c]) {
-        p[c] = themes[c] ? themes[c].slice(-10) : []
+        p[c] = themes[c] ? themes[c].slice(-10) : [];
       }
-    }, {}).slice(-10));
+      return p;
+    }, {}));
   });
 });
 
