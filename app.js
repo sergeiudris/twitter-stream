@@ -82,7 +82,8 @@ io.on('connection', function (socket) {
   socket.on('message', function (o) {
     io.emit("message", { id: socket.id, data: o });
   });
-  io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
+  //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
+   socket.volatile.emit('tweets', tweets.splice(-10));
 });
 
 
@@ -91,7 +92,7 @@ stream.on('message', function (msg) {
 })
 
 stream.on('connect', function (request) {
-  io.emit('tweets', tweets.splice(-10));
+ 
   console.log("stream 'connect' event");
 })
 stream.on('reconnect', function (request, response, connectInterval) {
