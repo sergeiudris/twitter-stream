@@ -52,9 +52,9 @@ const tweets = [];
 var T = new Twit({
   consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
   consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
-  //access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
-  //access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
-  app_only_auth: true
+  access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
+  access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
+  //app_only_auth: true
 })
 var stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
 stream.isStopped = false;
