@@ -120,14 +120,14 @@ io.on('connection', function (socket) {
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
   socket.on('themes', function (themes, cb) {
-    themes.forEach((e,i,a)=>{
+    themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
-    cb(themes.reduce((p,c,i,a)=>{
-      if(!p[c]){
-        p[c] = themes[c] ? themes[c].slice(-10):[]
+    cb(themes.reduce((p, c, i, a) => {
+      if (!p[c]) {
+        p[c] = themes[c] ? themes[c].slice(-10) : []
       }
-    },{}).slice(-10));
+    }, {}).slice(-10));
   });
 });
 
@@ -149,10 +149,13 @@ stream.on('reconnect', function (request, response, connectInterval) {
 stream.on('tweet', function (tweet) {
   //console.log("tweet");
   if (tweet.user && tweet.user.followers_count > 5000) {
-    let matches = emplace(tweet);
-    matches.forEach((e,i,a)=>{
-      io.to(e).emit('tweet',tweet);
+    let p = emplace(tweet);
+    p.then((matches) => {
+      matches.forEach((e, i, a) => {
+        io.to(e).emit('tweet', tweet);
+      })
     })
+
   }
 })
 
