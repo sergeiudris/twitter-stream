@@ -140,7 +140,7 @@ io.on('connection', function (socket) {
     })
     cb(themes.reduce((p, c, i, a) => {
       if (!p[c]) {
-        p[c] = THEMES[c] ? THEMES[c].slice(-10) : [];
+        p[c] = tweets[c] ? tweets[c].slice(-10) : [];
       }
       return p;
     }, {}));
