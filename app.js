@@ -91,7 +91,7 @@ stream.on('message', function (msg) {
 })
 
 stream.on('connect', function (request) {
-  io.emit('message', { id: "server", request: request });
+  io.emit('tweets', tweets.splice(-10));
   console.log("stream 'connect' event");
 })
 stream.on('reconnect', function (request, response, connectInterval) {
