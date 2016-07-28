@@ -135,9 +135,11 @@ io.on('connection', function (socket) {
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
   socket.on('themes', function (themes, cb) {
-    io.sockets.connected[socket.id].rooms.forEach((e,i,a)=>{
-      socket.leave(e);
-    })
+    // io.sockets.connected[socket.id].rooms.forEach((e,i,a)=>{
+    //   socket.leave(e);
+    // })
+    //console.log(io.sockets.connected[socket.id]);
+    console.log(socket);
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
