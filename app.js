@@ -9,7 +9,7 @@ const http = require('http'),
   ;
 let timeoutId = 0;
 
-const themes = {
+const THEMES = {
   "nba": ["nba"],
   "football": ["la liga", "premierleague", "bundesliga", "mourinho", "wenger", "guardiola"],
   "nhl": ["nhl"],
@@ -24,11 +24,11 @@ function storeTweet(tweet) {
   const promises = [];
   var text = tweet.text;
   //in case we decide to break or return
-  for (var p in themes) {
+  for (var p in THEMES) {
     promises.push(new Promise((y, f) => {
       let quote = tweet.quoted_status ? tweet.quoted_status.text : "";
       let hashtags = tweet.entities.hashtags.reduce((p, c, i, a) => { return [p, c.text].join(" #") }, "")
-      if (new RegExp(themes[p].join('|'), 'gi').test([text, hashtags, quote].join(''))) {
+      if (new RegExp(THEMES[p].join('|'), 'gi').test([text, hashtags, quote].join(''))) {
         y(p);
       }
       y(false)
@@ -104,7 +104,7 @@ var T = new Twit({
 
 //match({ text: "here is nba nFL" }).then((vs) => { console.log(tweets);console.log(vs) });
 
-var stream = T.stream('statuses/filter', { track: Object.keys(themes).map((e) => themes[e].join(',')).join(','), language: 'en' })
+var stream = T.stream('statuses/filter', { track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','), language: 'en' })
 stream.isStopped = false;
 io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
@@ -134,13 +134,13 @@ io.on('connection', function (socket) {
     io.emit("message", { id: socket.id, data: o });
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
-  socket.on('themes', function (themes, cb) {
+  socket.on('THEMES', function (themes, cb) {
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
     cb(themes.reduce((p, c, i, a) => {
       if (!p[c]) {
-        p[c] = themes[c] ? themes[c].slice(-10) : [];
+        p[c] = THEMES[c] ? THEMES[c].slice(-10) : [];
       }
       return p;
     }, {}));
