@@ -7,7 +7,7 @@ const http = require('http'),
   env = process.env,
   Twit = require('twit')
   ;
-
+// env.OPENSHIFT_NODEJS_PORT = 2000;
 let timeoutId = 0;
 
 let server = http.createServer(function (req, res) {
@@ -52,9 +52,9 @@ const tweets = [];
 var T = new Twit({
   consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
   consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
-  access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
-  access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
-  //  app_only_auth: true
+  //access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
+  //access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
+  app_only_auth: true
 })
 var stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
 stream.isStopped = false;
@@ -97,6 +97,7 @@ stream.on('connect', function (request) {
 })
 
 stream.on('tweet', function (tweet) {
+  //console.log("tweet");
   if (tweet.user && tweet.user.followers_count > 5000) {
     tweets.push(tweet);
     tweets.splice(-50);
@@ -106,10 +107,14 @@ stream.on('tweet', function (tweet) {
 
 stream.on('disconnect', function (disconnectMessage) {
   console.log("twitter stream disconnected")
+  stream.isStopped = true;
 })
 
-
-
+stream.on('error', function (err) {
+  console.log("twitter stream error:")
+  console.log(err);
+  stream.isStopped = true;
+})
 
 const PORT = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
