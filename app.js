@@ -7,7 +7,7 @@ const http = require('http'),
   env = process.env,
   Twit = require('twit')
   ;
-// env.OPENSHIFT_NODEJS_PORT = 2000;
+ env.OPENSHIFT_NODEJS_PORT = 2000;
 let timeoutId = 0;
 
 let server = http.createServer(function (req, res) {
@@ -70,7 +70,7 @@ io.on('connection', function (socket) {
   socket.on('disconnect', function (e) {
     console.log(`${socket.id} disconnected`);
 
-    if (!Object.keys(io.connected).length) {
+    if (!Object.keys(io.sockets.connected).length) {
       timeoutId = setTimeout(() => {
         stream.stop();
         stream.isStopped = true;
@@ -124,5 +124,4 @@ console.log(`ip: ${env.OPENSHIFT_NODEJS_IP || 'localhost'}`);
 server.listen(PORT, env.OPENSHIFT_NODEJS_IP || 'localhost', function () {
   console.log(`Application worker ${process.pid} started...`);
 });
-
 
