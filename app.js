@@ -135,7 +135,7 @@ io.on('connection', function (socket) {
   });
   //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
   socket.on('themes', function (themes, cb) {
-    socket.rooms.forEach((e,i,a)=>{
+    io.connected[socket.id].rooms.forEach((e,i,a)=>{
       socket.leave(e);
     })
     themes.forEach((e, i, a) => {
