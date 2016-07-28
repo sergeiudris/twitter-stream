@@ -138,8 +138,12 @@ io.on('connection', function (socket) {
     // io.sockets.connected[socket.id].rooms.forEach((e,i,a)=>{
     //   socket.leave(e);
     // })
-    //console.log(io.sockets.connected[socket.id]);
-    console.log(socket);
+    Object.keys(socket.rooms).forEach((e, i, a) => {
+      let room = socket.rooms[e];
+      if (room != socket.id) {
+        socket.leave(room);
+      }
+    })
     themes.forEach((e, i, a) => {
       socket.join(e.toLowerCase());
     })
