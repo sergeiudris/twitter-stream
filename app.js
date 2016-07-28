@@ -4,29 +4,14 @@ const http = require('http'),
   path = require('path'),
   contentTypes = require('./utils/content-types'),
   sysInfo = require('./utils/sys-info'),
-  env = process.env;
+  env = process.env,
+  Twit = require('twit')
+  ;
 
-
-//const Twit = require('twit')
-// var sserver = require('https').createServer({},);
-// var io = require('socket.io')(sserver);
-// const PORT = process.env.OPENSHIFT_NODEJS_PORT || 8443;
-// io.on('connection', function (socket) {
-//     console.log("a user connected");
-
-//     socket.on('disconnect', function (e) {
-//         console.log("disconnect");
-//     });
-//     socket.on('chat message', function (o) {
-//         socket.broadcast.emit("chat message", o);
-//     });
-// });
-// sserver.listen(PORT, function () {
-//     console.log('>app is running on port ' + PORT);
-// }) 
+let timeoutId = 0;
 
 let server = http.createServer(function (req, res) {
-  
+
   //res.writeHead(200);
   //res.setHeader('Access-Control-Allow-Origin', '*');
   //res.end();
@@ -62,17 +47,66 @@ let server = http.createServer(function (req, res) {
   }
 });
 var io = require('socket.io')(server);
+const tweets = [];
+
+T = new Twit({
+  consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
+  consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
+  access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
+  access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
+  //  app_only_auth: true
+})
+stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
+stream.isStopped = false;
 io.on('connection', function (socket) {
   console.log(`${socket.id} connected`);
 
+  clearTimeout(timeoutId);
+  if (stream.isStopped) {
+    console.log("stream has been restarted");
+    stream.start();
+  }
+
   socket.on('disconnect', function (e) {
     console.log(`${socket.id} disconnected`);
+
+    if (!Object.keys(io.connected).length) {
+      timeoutId = setTimeout(() => {
+        stream.stop();
+        stream.isStopped = true;
+        tweets.splice(0);
+        console.log("stream has been stopped");
+      }, 3600 * 1000);
+    }
+
   });
-  socket.on('m', function (o) {
-    io.emit("m", { id: "server", msg: o });
+  socket.on('message', function (o) {
+    io.emit("message", { id: socket.id, data: o });
   });
-  io.emit("m", { id: "server", msg: `new user connected ${socket.id}` });
+  io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
 });
+
+
+
+stream.on('message', function (msg) {
+})
+
+stream.on('connect', function (request) {
+  console.log("twitter stream connect");
+  io.emit('message', "stream connecting")
+})
+
+stream.on('tweet', function (tweet) {
+  if (tweet.user && tweet.user.followers_count > 5000) {
+    tweets.push(tweet).splice(-50);
+    io.emit('tweet', tweet);
+  }
+})
+
+stream.on('disconnect', function (disconnectMessage) {
+  console.log("twitter stream disconnected")
+})
+
 
 
 
@@ -84,3 +118,5 @@ console.log(`ip: ${env.OPENSHIFT_NODEJS_IP || 'localhost'}`);
 server.listen(PORT, env.OPENSHIFT_NODEJS_IP || 'localhost', function () {
   console.log(`Application worker ${process.pid} started...`);
 });
+
+
