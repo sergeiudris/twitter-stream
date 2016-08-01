@@ -40,57 +40,93 @@ var io;
 const PORT = 2443;
 var T;
 var stream;
-pem.createCertificate({ days: 1, selfSigned: true }, function (err, keys) {
-    //console.log(Object.keys(keys));
-    //fs.writeFile('certs.json', JSON.stringify(keys));
-    //keys = fs.readFileSync('certs.json');
-    var server = require('https').createServer({ host:'localhost', key: keys.serviceKey, cert: keys.certificate });
-    io = require('socket.io')(server);
-    io.on('connection', function (socket) {
-        console.log("a user connected");
+// pem.createCertificate({ days: 1, selfSigned: true }, function (err, keys) {
+//     //console.log(Object.keys(keys));
+//     //fs.writeFile('certs.json', JSON.stringify(keys));
+//     //keys = fs.readFileSync('certs.json');
+//     var server = require('https').createServer({ host: 'localhost', key: keys.serviceKey, cert: keys.certificate });
+//     io = require('socket.io')(server);
+//     io.on('connection', function (socket) {
+//         console.log("a user connected");
 
-        socket.on('disconnect', function (e) {
-            console.log("disconnect");
-        });
-        socket.on('chat message', function (o) {
-            socket.broadcast.emit("chat message", o);
-        });
-    });
-    server.listen(PORT, function () {
-        console.log('>app is running on port ' + PORT + '\n>type   http://127.0.0.1:' + PORT + '   in your browser to use the application\n>to stop the server: press  ctrl + c');
-    })
-    // T = new Twit({
-    //     consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
-    //     consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
-    //     access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
-    //     access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
-    //     //  app_only_auth: true
-    // })
-    // stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
-    // stream.on('message', function (msg) {
-    // })
+//         socket.on('disconnect', function (e) {
+//             console.log("disconnect");
+//         });
+//         socket.on('chat message', function (o) {
+//             socket.broadcast.emit("chat message", o);
+//         });
+//     });
+//     server.listen(PORT, function () {
+//         console.log('>app is running on port ' + PORT + '\n>type   http://127.0.0.1:' + PORT + '   in your browser to use the application\n>to stop the server: press  ctrl + c');
+//     })
 
-    // stream.on('connect', function (request) {
-    //     console.log("attempt to connect");
-    //     io.emit('msg', "stream connecting")
-    // })
-
-    // stream.on('tweet', function (tweet) {
-    //     console.log('tweet');
-    //     if (tweet.user && tweet.user.followers_count > 10000) {
-    //         io.emit('msg', tweet);
-    //     }
-    // })
-
-    // stream.on('disconnect', function (disconnectMessage) {
-    //     say("disconnect")
-    // })
-});
+// });
 
 function say(...args) {
     console.log(args);
 }
 
+// var server = require('http').createServer();
+// io = require('socket.io')(server);
+// io.on('connection', function (socket) {
+//     console.log("a user connected");
+
+//     socket.on('disconnect', function (e) {
+//         console.log("disconnect");
+//     });
+//     socket.on('chat message', function (o) {
+//         socket.broadcast.emit("chat message", o);
+//     });
+// });
+// server.listen(PORT, function () {
+//     console.log('>app is running on port ' + PORT + '\n>type   http://127.0.0.1:' + PORT + '   in your browser to use the application\n>to stop the server: press  ctrl + c');
+// })
+T = new Twit({
+    consumer_key: 'PDvvNuj9QpgrwuMmXj5BzcD6D',
+    consumer_secret: 'ioU0pUy9apMMs80Wb2NXw793POAsf3XkOZ9C5OaEjBdvEnwpOe',
+    access_token: '757606965895987201-GiPClOgfqmnpFji4TnJfDAyb5CSSuSG',
+    access_token_secret: 'gb5lJfcb13bRU2KvXX0XZUwi9x8CUQmru0ED0l8nsCale',
+    //  app_only_auth: true
+})
+// T = new Twit({
+//     consumer_key: 'YS2BntFcYVkTdf2kju0sVWIFy',
+//     consumer_secret: '9gw8ACgOGKO5NMEaqi7zp3QV0ATG7Hnx8aVYaGkAVLPwiTELLR',
+//     access_token: '	757606965895987201-dxD7Y2pDfLryYTD2zRzBP6qVx2l3xn2',
+//     access_token_secret: 'N38Bzi6csid84B9EBJLGMFl0E1sPNKhmG1nZBKhG9GFO2',
+//     //  app_only_auth: true
+// })
+stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
+stream.on('connect', function (res) {
+    fs.writeFile('connect.json', JSON.stringify(res));
+    console.log("connect");
+})
+
+stream.on('reconnect', function () {
+    fs.writeFile('reconnect.json', JSON.stringify(arguments));
+})
+stream.on('tweet', function (tweet) {
+    fs.writeFile('tweet.json', JSON.stringify(arguments));
+    console.log("tweet")
+})
+// stream = T.stream('statuses/filter', { track: ["nba"], language: 'en' })
+// stream.on('message', function (msg) {
+// })
+
+// stream.on('connect', function (request) {
+//     console.log("attempt to connect");
+//     io.emit('msg', "stream connecting")
+// })
+
+// stream.on('tweet', function (tweet) {
+//     console.log('tweet');
+//     if (tweet.user && tweet.user.followers_count > 10000) {
+//         io.emit('msg', tweet);
+//     }
+// })
+
+// stream.on('disconnect', function (disconnectMessage) {
+//     say("disconnect")
+// })
 // var https = require('https'),
 //     pem = require('pem'),
 //     express = require('express');
