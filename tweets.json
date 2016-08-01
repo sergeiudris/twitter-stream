@@ -1,0 +1,1520 @@
+[
+    "nfl"
+]{
+    "created_at": "Thu Jul 28 16:09:19 +0000 2016",
+    "id": 758695844128227300,
+    "id_str": "758695844128227328",
+    "text": "#PeytonManning #NFL 2014 Topps Inception Green #31 Peyton Manning Denver… https://t.co/oOE8TKqqu0 #Broncos #Deals https://t.co/NLsmossBAI",
+    "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 530979165,
+        "id_str": "530979165",
+        "name": "Peyton Manning Fans",
+        "screen_name": "Manning_Watch",
+        "location": null,
+        "url": null,
+        "description": "The latest  #NFL #Denver #Broncos Peyton Manning related #Daily #Deals #online #discount #Bestseller #Onsale #Sale #Good #Price #JustForToday #BuyNow #bargain",
+        "protected": false,
+        "verified": false,
+        "followers_count": 5182,
+        "friends_count": 1952,
+        "listed_count": 220,
+        "favourites_count": 0,
+        "statuses_count": 444775,
+        "created_at": "Tue Mar 20 04:00:15 +0000 2012",
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/453683163/images1.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/453683163/images1.jpg",
+        "profile_background_tile": true,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1911845418/images_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1911845418/images_normal.jpg",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "PeytonManning",
+                "indices": [
+                    0,
+                    14
+                ]
+            },
+            {
+                "text": "NFL",
+                "indices": [
+                    15,
+                    19
+                ]
+            },
+            {
+                "text": "Broncos",
+                "indices": [
+                    98,
+                    106
+                ]
+            },
+            {
+                "text": "Deals",
+                "indices": [
+                    107,
+                    113
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/oOE8TKqqu0",
+                "expanded_url": "http://dlvr.it/LvX99n",
+                "display_url": "dlvr.it/LvX99n",
+                "indices": [
+                    74,
+                    97
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": [],
+        "media": [
+            {
+                "id": 758695842152800300,
+                "id_str": "758695842152800256",
+                "indices": [
+                    114,
+                    137
+                ],
+                "media_url": "http://pbs.twimg.com/media/Codt2UQVYAA7A77.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/Codt2UQVYAA7A77.jpg",
+                "url": "https://t.co/NLsmossBAI",
+                "display_url": "pic.twitter.com/NLsmossBAI",
+                "expanded_url": "http://twitter.com/Manning_Watch/status/758695844128227328/photo/1",
+                "type": "photo",
+                "sizes": {
+                    "thumb": {
+                        "w": 150,
+                        "h": 150,
+                        "resize": "crop"
+                    },
+                    "small": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    },
+                    "large": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    },
+                    "medium": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    }
+                }
+            }
+        ]
+    },
+    "extended_entities": {
+        "media": [
+            {
+                "id": 758695842152800300,
+                "id_str": "758695842152800256",
+                "indices": [
+                    114,
+                    137
+                ],
+                "media_url": "http://pbs.twimg.com/media/Codt2UQVYAA7A77.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/Codt2UQVYAA7A77.jpg",
+                "url": "https://t.co/NLsmossBAI",
+                "display_url": "pic.twitter.com/NLsmossBAI",
+                "expanded_url": "http://twitter.com/Manning_Watch/status/758695844128227328/photo/1",
+                "type": "photo",
+                "sizes": {
+                    "thumb": {
+                        "w": 150,
+                        "h": 150,
+                        "resize": "crop"
+                    },
+                    "small": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    },
+                    "large": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    },
+                    "medium": {
+                        "w": 284,
+                        "h": 400,
+                        "resize": "fit"
+                    }
+                }
+            }
+        ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722159784"
+}[
+    "football"
+]{
+    "created_at": "Thu Jul 28 16:09:20 +0000 2016",
+    "id": 758695848423424000,
+    "id_str": "758695848423424001",
+    "text": "#ManchesterCity #ManCity #MCFC #BlueMoon Manchester City manager Pep Guardiola confirms interest in Leroy Sane.. https://t.co/PJbKcsIiXs",
+    "source": "<a href=\"https://www.socialoomph.com\" rel=\"nofollow\">SocialOomph</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 347026032,
+        "id_str": "347026032",
+        "name": "Man City Fans",
+        "screen_name": "mancitynewsonly",
+        "location": null,
+        "url": null,
+        "description": "Man City FC Fan Page. NOT linked to Official Club #Aguero #CTWD #WeAreCity #ComeOnCity #CTID #BlueMoon #MCFC #ManCity #ManchesterCity",
+        "protected": false,
+        "verified": false,
+        "followers_count": 17016,
+        "friends_count": 3942,
+        "listed_count": 103,
+        "favourites_count": 53,
+        "statuses_count": 75933,
+        "created_at": "Tue Aug 02 05:11:19 +0000 2011",
+        "utc_offset": 36000,
+        "time_zone": "Melbourne",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "00B7DC",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_link_color": "00B7DC",
+        "profile_sidebar_border_color": "00B7DC",
+        "profile_sidebar_fill_color": "FCFCFC",
+        "profile_text_color": "00B7DC",
+        "profile_use_background_image": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/683248246844559360/J7mQLjPE_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/683248246844559360/J7mQLjPE_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/347026032/1453545072",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "ManchesterCity",
+                "indices": [
+                    0,
+                    15
+                ]
+            },
+            {
+                "text": "ManCity",
+                "indices": [
+                    16,
+                    24
+                ]
+            },
+            {
+                "text": "MCFC",
+                "indices": [
+                    25,
+                    30
+                ]
+            },
+            {
+                "text": "BlueMoon",
+                "indices": [
+                    31,
+                    40
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/PJbKcsIiXs",
+                "expanded_url": "http://dld.bz/eJSMk",
+                "display_url": "dld.bz/eJSMk",
+                "indices": [
+                    113,
+                    136
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722160808"
+}[
+    "nfl"
+]{
+    "created_at": "Thu Jul 28 16:09:22 +0000 2016",
+    "id": 758695854953734100,
+    "id_str": "758695854953734144",
+    "text": "#NFL #PeytonManning 1998 Bowman Chrome Peyton Manning RC https://t.co/9u2jS9WksA #Broncos #Bestseller https://t.co/ssTG1F79Mi",
+    "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 530979165,
+        "id_str": "530979165",
+        "name": "Peyton Manning Fans",
+        "screen_name": "Manning_Watch",
+        "location": null,
+        "url": null,
+        "description": "The latest  #NFL #Denver #Broncos Peyton Manning related #Daily #Deals #online #discount #Bestseller #Onsale #Sale #Good #Price #JustForToday #BuyNow #bargain",
+        "protected": false,
+        "verified": false,
+        "followers_count": 5182,
+        "friends_count": 1952,
+        "listed_count": 220,
+        "favourites_count": 0,
+        "statuses_count": 444776,
+        "created_at": "Tue Mar 20 04:00:15 +0000 2012",
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/453683163/images1.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/453683163/images1.jpg",
+        "profile_background_tile": true,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1911845418/images_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1911845418/images_normal.jpg",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "NFL",
+                "indices": [
+                    0,
+                    4
+                ]
+            },
+            {
+                "text": "PeytonManning",
+                "indices": [
+                    5,
+                    19
+                ]
+            },
+            {
+                "text": "Broncos",
+                "indices": [
+                    81,
+                    89
+                ]
+            },
+            {
+                "text": "Bestseller",
+                "indices": [
+                    90,
+                    101
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/9u2jS9WksA",
+                "expanded_url": "http://dlvr.it/LvX9Ft",
+                "display_url": "dlvr.it/LvX9Ft",
+                "indices": [
+                    57,
+                    80
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": [],
+        "media": [
+            {
+                "id": 758695852563050500,
+                "id_str": "758695852563050496",
+                "indices": [
+                    102,
+                    125
+                ],
+                "media_url": "http://pbs.twimg.com/media/Codt27CVMAAPu3J.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/Codt27CVMAAPu3J.jpg",
+                "url": "https://t.co/ssTG1F79Mi",
+                "display_url": "pic.twitter.com/ssTG1F79Mi",
+                "expanded_url": "http://twitter.com/Manning_Watch/status/758695854953734144/photo/1",
+                "type": "photo",
+                "sizes": {
+                    "small": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    },
+                    "medium": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    },
+                    "thumb": {
+                        "w": 150,
+                        "h": 150,
+                        "resize": "crop"
+                    },
+                    "large": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    }
+                }
+            }
+        ]
+    },
+    "extended_entities": {
+        "media": [
+            {
+                "id": 758695852563050500,
+                "id_str": "758695852563050496",
+                "indices": [
+                    102,
+                    125
+                ],
+                "media_url": "http://pbs.twimg.com/media/Codt27CVMAAPu3J.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/Codt27CVMAAPu3J.jpg",
+                "url": "https://t.co/ssTG1F79Mi",
+                "display_url": "pic.twitter.com/ssTG1F79Mi",
+                "expanded_url": "http://twitter.com/Manning_Watch/status/758695854953734144/photo/1",
+                "type": "photo",
+                "sizes": {
+                    "small": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    },
+                    "medium": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    },
+                    "thumb": {
+                        "w": 150,
+                        "h": 150,
+                        "resize": "crop"
+                    },
+                    "large": {
+                        "w": 375,
+                        "h": 500,
+                        "resize": "fit"
+                    }
+                }
+            }
+        ]
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722162365"
+}[
+    "nba"
+]{
+    "created_at": "Thu Jul 28 16:09:22 +0000 2016",
+    "id": 758695856740536300,
+    "id_str": "758695856740536320",
+    "text": "NBA Trade Rumors: #OklahomaCityThunder Open To Parting With... #OklahomaCityThunder https://t.co/ceYS7txhn0",
+    "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 3035639776,
+        "id_str": "3035639776",
+        "name": "Anni *★*",
+        "screen_name": "ann1rt",
+        "location": "Kentucky",
+        "url": null,
+        "description": "♥ Gaga ♥ Rihanna diva ☈ ♥ smell like teen spirit †",
+        "protected": false,
+        "verified": false,
+        "followers_count": 8961,
+        "friends_count": 9637,
+        "listed_count": 296,
+        "favourites_count": 32096,
+        "statuses_count": 288007,
+        "created_at": "Fri Feb 13 22:46:05 +0000 2015",
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/566367976157241345/VenbBUwH_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/566367976157241345/VenbBUwH_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3035639776/1423867629",
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "OklahomaCityThunder",
+                "indices": [
+                    18,
+                    38
+                ]
+            },
+            {
+                "text": "OklahomaCityThunder",
+                "indices": [
+                    63,
+                    83
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/ceYS7txhn0",
+                "expanded_url": "http://dlvr.it/LvX9J4",
+                "display_url": "dlvr.it/LvX9J4",
+                "indices": [
+                    84,
+                    107
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722162791"
+}[]{
+    "created_at": "Thu Jul 28 16:09:24 +0000 2016",
+    "id": 758695863128461300,
+    "id_str": "758695863128461313",
+    "text": "Same colors, but @JosinaAnderson accessorized better  https://t.co/lyxKbG0p6a",
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 23778898,
+        "id_str": "23778898",
+        "name": "J.A. Adande",
+        "screen_name": "jadande",
+        "location": "West Coast",
+        "url": "http://search.espn.go.com/j-a-adande/",
+        "description": "http://ESPN.com writer/Around The Horn panelist/ESPN sideline reporter/USC professor/occasional piano player",
+        "protected": false,
+        "verified": true,
+        "followers_count": 602291,
+        "friends_count": 1203,
+        "listed_count": 10801,
+        "favourites_count": 481,
+        "statuses_count": 31687,
+        "created_at": "Wed Mar 11 15:35:27 +0000 2009",
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": true,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/639505909480185856/0kJ8hsoL_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/639505909480185856/0kJ8hsoL_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/23778898/1443656210",
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "quoted_status_id": 758690437553094700,
+    "quoted_status_id_str": "758690437553094656",
+    "quoted_status": {
+        "created_at": "Thu Jul 28 15:47:50 +0000 2016",
+        "id": 758690437553094700,
+        "id_str": "758690437553094656",
+        "text": "Just finished interviewing #Bucs QB Jameis Winston 1-on-1. Catch it on NFL Insiders on @espn. https://t.co/0W70A5GMrm",
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 41369172,
+            "id_str": "41369172",
+            "name": "Josina Anderson",
+            "screen_name": "JosinaAnderson",
+            "location": "Matt 6:33.  Imperfect. LJR.",
+            "url": "http://www.espn.com",
+            "description": "Evolving. Emmy & NABJ award winner. ESPN talent. Formerly w/ Showtime, TarHeel Track, American Youth Ballet, Jr. Olympian. Tweets r mine, RTs not endorsements.",
+            "protected": false,
+            "verified": true,
+            "followers_count": 109995,
+            "friends_count": 2731,
+            "listed_count": 1797,
+            "favourites_count": 156,
+            "statuses_count": 32222,
+            "created_at": "Wed May 20 14:31:26 +0000 2009",
+            "utc_offset": -21600,
+            "time_zone": "Mountain Time (US & Canada)",
+            "geo_enabled": false,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/869598812/2fbaa135c1f412fc3a46adeddd2a74cb.jpeg",
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/869598812/2fbaa135c1f412fc3a46adeddd2a74cb.jpeg",
+            "profile_background_tile": false,
+            "profile_link_color": "FF0000",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "F6F6F6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/756636323193257984/tdUHtEUR_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/756636323193257984/tdUHtEUR_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/41369172/1465181838",
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 11,
+        "favorite_count": 24,
+        "entities": {
+            "hashtags": [
+                {
+                    "text": "Bucs",
+                    "indices": [
+                        27,
+                        32
+                    ]
+                }
+            ],
+            "urls": [],
+            "user_mentions": [
+                {
+                    "screen_name": "espn",
+                    "name": "ESPN",
+                    "id": 2557521,
+                    "id_str": "2557521",
+                    "indices": [
+                        87,
+                        92
+                    ]
+                }
+            ],
+            "symbols": [],
+            "media": [
+                {
+                    "id": 758690388081205200,
+                    "id_str": "758690388081205248",
+                    "indices": [
+                        94,
+                        117
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/Codo42QVYAALaBh.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/Codo42QVYAALaBh.jpg",
+                    "url": "https://t.co/0W70A5GMrm",
+                    "display_url": "pic.twitter.com/0W70A5GMrm",
+                    "expanded_url": "http://twitter.com/JosinaAnderson/status/758690437553094656/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "large": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 680,
+                            "h": 510,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 758690388081205200,
+                    "id_str": "758690388081205248",
+                    "indices": [
+                        94,
+                        117
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/Codo42QVYAALaBh.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/Codo42QVYAALaBh.jpg",
+                    "url": "https://t.co/0W70A5GMrm",
+                    "display_url": "pic.twitter.com/0W70A5GMrm",
+                    "expanded_url": "http://twitter.com/JosinaAnderson/status/758690437553094656/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "large": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 680,
+                            "h": 510,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        }
+                    }
+                },
+                {
+                    "id": 758690406343114800,
+                    "id_str": "758690406343114757",
+                    "indices": [
+                        94,
+                        117
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/Codo56SUAAUXJhr.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/Codo56SUAAUXJhr.jpg",
+                    "url": "https://t.co/0W70A5GMrm",
+                    "display_url": "pic.twitter.com/0W70A5GMrm",
+                    "expanded_url": "http://twitter.com/JosinaAnderson/status/758690437553094656/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "large": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 680,
+                            "h": 510,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 1024,
+                            "h": 768,
+                            "resize": "fit"
+                        }
+                    }
+                },
+                {
+                    "id": 758690422839390200,
+                    "id_str": "758690422839390208",
+                    "indices": [
+                        94,
+                        117
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/Codo63vVMAA_K7m.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/Codo63vVMAA_K7m.jpg",
+                    "url": "https://t.co/0W70A5GMrm",
+                    "display_url": "pic.twitter.com/0W70A5GMrm",
+                    "expanded_url": "http://twitter.com/JosinaAnderson/status/758690437553094656/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 1024,
+                            "h": 533,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 680,
+                            "h": 354,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 1024,
+                            "h": 533,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "filter_level": "low",
+        "lang": "en"
+    },
+    "is_quote_status": true,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [],
+        "urls": [
+            {
+                "url": "https://t.co/lyxKbG0p6a",
+                "expanded_url": "https://twitter.com/josinaanderson/status/758690437553094656",
+                "display_url": "twitter.com/josinaanderson…",
+                "indices": [
+                    54,
+                    77
+                ]
+            }
+        ],
+        "user_mentions": [
+            {
+                "screen_name": "JosinaAnderson",
+                "name": "Josina Anderson",
+                "id": 41369172,
+                "id_str": "41369172",
+                "indices": [
+                    17,
+                    32
+                ]
+            }
+        ],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722164314"
+}[
+    "nfl"
+]{
+    "created_at": "Thu Jul 28 16:09:24 +0000 2016",
+    "id": 758695863510196200,
+    "id_str": "758695863510196224",
+    "text": "#NFL Wire: BC-AP Sports Preview Digest https://t.co/AtJdWhiwD0 Follow @playerpress",
+    "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 20654353,
+        "id_str": "20654353",
+        "name": "PlayerPress",
+        "screen_name": "playerpress",
+        "location": "New York, NY",
+        "url": "http://playerpress.com",
+        "description": "Player Press is a curator of interesting sports content across the web. We publish daily sports news, articles, photos, social media, rumors and commentary.",
+        "protected": false,
+        "verified": false,
+        "followers_count": 11904,
+        "friends_count": 401,
+        "listed_count": 583,
+        "favourites_count": 1,
+        "statuses_count": 246256,
+        "created_at": "Thu Feb 12 04:33:34 +0000 2009",
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "1A1B1F",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+        "profile_background_tile": false,
+        "profile_link_color": "ED2F3F",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "252429",
+        "profile_text_color": "666666",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/237988162/PPicon_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/237988162/PPicon_normal.png",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "NFL",
+                "indices": [
+                    0,
+                    4
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/AtJdWhiwD0",
+                "expanded_url": "http://www.foxsports.com/nfl/story/bc-ap-sports-preview-digest-072816",
+                "display_url": "foxsports.com/nfl/story/bc-a…",
+                "indices": [
+                    39,
+                    62
+                ]
+            }
+        ],
+        "user_mentions": [
+            {
+                "screen_name": "playerpress",
+                "name": "PlayerPress",
+                "id": 20654353,
+                "id_str": "20654353",
+                "indices": [
+                    70,
+                    82
+                ]
+            }
+        ],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722164405"
+}{
+    "created_at": "Thu Jul 28 16:09:27 +0000 2016",
+    "id": 758695877481377800,
+    "id_str": "758695877481377792",
+    "text": "Miami Dolphins select #LaremyTunsil with No. 13 pick in 2016 NFL... https://t.co/juQcuck7yp",
+    "source": "<a href=\"http://dlvr.it\" rel=\"nofollow\">dlvr.it</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 1655293610,
+        "id_str": "1655293610",
+        "name": "T w i t t e r",
+        "screen_name": "333903271",
+        "location": "Social Networking",
+        "url": "https://itunes.apple.com/us/app/twitter/id333903271?mt=8",
+        "description": "With Twitter, you can watch the world unfold like never before. \r\n\r\n• Get real-time stories, pictures, videos, conversations, ideas, and inspiration.",
+        "protected": false,
+        "verified": false,
+        "followers_count": 24104,
+        "friends_count": 26698,
+        "listed_count": 163,
+        "favourites_count": 14264,
+        "statuses_count": 537570,
+        "created_at": "Thu Aug 08 12:33:51 +0000 2013",
+        "utc_offset": -25200,
+        "time_zone": "Pacific Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000047145245/cf450e4959a987a8b3e413d9ab75e266.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000047145245/cf450e4959a987a8b3e413d9ab75e266.jpeg",
+        "profile_background_tile": true,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000259813790/444db6f212d6d8232f193b1acec2c9d1_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000259813790/444db6f212d6d8232f193b1acec2c9d1_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1655293610/1375965328",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "LaremyTunsil",
+                "indices": [
+                    22,
+                    35
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/juQcuck7yp",
+                "expanded_url": "http://dlvr.it/LvX9Qc",
+                "display_url": "dlvr.it/LvX9Qc",
+                "indices": [
+                    68,
+                    91
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722167736"
+}[
+    "nfl"
+][
+    "tennis"
+]{
+    "created_at": "Thu Jul 28 16:09:28 +0000 2016",
+    "id": 758695881906524200,
+    "id_str": "758695881906524160",
+    "text": "Rafael Nadal suggests Novak Djokovic is playing better than... https://t.co/vYm76ZJuYz #rogerfederer",
+    "source": "<a href=\"http://www.google.com/\" rel=\"nofollow\">Google</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 3033331781,
+        "id_str": "3033331781",
+        "name": "L U I Z A",
+        "screen_name": "l5iza",
+        "location": null,
+        "url": null,
+        "description": null,
+        "protected": false,
+        "verified": false,
+        "followers_count": 10720,
+        "friends_count": 11214,
+        "listed_count": 819,
+        "favourites_count": 30422,
+        "statuses_count": 544968,
+        "created_at": "Thu Feb 12 20:12:09 +0000 2015",
+        "utc_offset": -21600,
+        "time_zone": "Mountain Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/565966997117095936/8aFL8Gu0_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/565966997117095936/8aFL8Gu0_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3033331781/1423772016",
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "rogerfederer",
+                "indices": [
+                    87,
+                    100
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/vYm76ZJuYz",
+                "expanded_url": "http://goo.gl/fb/NpjsZX",
+                "display_url": "goo.gl/fb/NpjsZX",
+                "indices": [
+                    63,
+                    86
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722168791"
+}[]{
+    "created_at": "Thu Jul 28 16:09:29 +0000 2016",
+    "id": 758695883248660500,
+    "id_str": "758695883248660480",
+    "text": "Is the Whitemud open yet? https://t.co/nGcUKnzeRB #yeg",
+    "source": "<a href=\"http://www.cyanicautomation.com\" rel=\"nofollow\">Reddit Retweeted </a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 2792624479,
+        "id_str": "2792624479",
+        "name": "Alberta411",
+        "screen_name": "Alberta411",
+        "location": "Alberta, Canada",
+        "url": null,
+        "description": "Tweeting interesting content relating to Alberta. Happy to re-tweet any event in Alberta, just message us. Giving everyone the #Alberta411.",
+        "protected": false,
+        "verified": false,
+        "followers_count": 11905,
+        "friends_count": 10235,
+        "listed_count": 763,
+        "favourites_count": 83148,
+        "statuses_count": 86339,
+        "created_at": "Fri Sep 05 20:53:12 +0000 2014",
+        "utc_offset": -21600,
+        "time_zone": "Mountain Time (US & Canada)",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/507997116736626688/Q3JLWtf5_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/507997116736626688/Q3JLWtf5_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2792624479/1409954605",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [
+            {
+                "text": "yeg",
+                "indices": [
+                    50,
+                    54
+                ]
+            }
+        ],
+        "urls": [
+            {
+                "url": "https://t.co/nGcUKnzeRB",
+                "expanded_url": "http://ruq.us/RLL9hIn",
+                "display_url": "ruq.us/RLL9hIn",
+                "indices": [
+                    26,
+                    49
+                ]
+            }
+        ],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722169111"
+}{
+    "created_at": "Thu Jul 28 16:09:30 +0000 2016",
+    "id": 758695889649229800,
+    "id_str": "758695889649229829",
+    "text": "Got my NHL 17 beta code lets goooo",
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 213062762,
+        "id_str": "213062762",
+        "name": "Curlz",
+        "screen_name": "XCURLZY",
+        "location": null,
+        "url": null,
+        "description": null,
+        "protected": false,
+        "verified": false,
+        "followers_count": 5410,
+        "friends_count": 183,
+        "listed_count": 11,
+        "favourites_count": 11574,
+        "statuses_count": 50539,
+        "created_at": "Sun Nov 07 21:26:39 +0000 2010",
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": true,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "8B542B",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000175606838/0h5GS7MY.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000175606838/0h5GS7MY.jpeg",
+        "profile_background_tile": false,
+        "profile_link_color": "9D582E",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/578242662811090944/BHXAPglW_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/578242662811090944/BHXAPglW_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/213062762/1426698829",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [],
+        "urls": [],
+        "user_mentions": [],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722170637"
+}[
+    "nhl"
+][
+    "football"
+]{
+    "created_at": "Thu Jul 28 16:09:34 +0000 2016",
+    "id": 758695904497000400,
+    "id_str": "758695904497000448",
+    "text": "RT @TransferRelated: BREAKING: Jose Mourinho has told Bastian Schweinsteiger he can leave Manchester Utd. [Daily Mail]",
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "truncated": false,
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+        "id": 72056342,
+        "id_str": "72056342",
+        "name": "Üstat Höca Vanü Ega",
+        "screen_name": "AristideBanceVU",
+        "location": "Port Vila",
+        "url": "http://merkezsagdirilecek.com",
+        "description": "Vanuatu İslam Cemahiriyesi'nin 1. Cumhurbaşkanı(Kansız Darbe^^) RTlerde yer alan fikirler yazara aittir ve Üstat Vanü'nün editöryel pölitikasını yansıtmayabilir",
+        "protected": false,
+        "verified": false,
+        "followers_count": 7604,
+        "friends_count": 374,
+        "listed_count": 103,
+        "favourites_count": 387,
+        "statuses_count": 13751,
+        "created_at": "Sun Sep 06 15:26:51 +0000 2009",
+        "utc_offset": 10800,
+        "time_zone": "Istanbul",
+        "geo_enabled": false,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "profile_background_color": "91C4BC",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/695653551910055936/6b3Ek0C9.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/695653551910055936/6b3Ek0C9.jpg",
+        "profile_background_tile": true,
+        "profile_link_color": "0B8C8C",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "F6F6F6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/757340472553635840/OfqEgbNW_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/757340472553635840/OfqEgbNW_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/72056342/1365327715",
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+        "created_at": "Thu Jul 28 15:56:33 +0000 2016",
+        "id": 758692631346020400,
+        "id_str": "758692631346020352",
+        "text": "BREAKING: Jose Mourinho has told Bastian Schweinsteiger he can leave Manchester Utd. [Daily Mail]",
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 2330299633,
+            "id_str": "2330299633",
+            "name": "Transfer Related",
+            "screen_name": "TransferRelated",
+            "location": null,
+            "url": null,
+            "description": "Transfers, Rumours, Gossip, Paper Talk, Trusted Sources, Manager Ins & Outs, Daily Football News. 18+ Contact: TransferRelated@outlook.com",
+            "protected": false,
+            "verified": false,
+            "followers_count": 349985,
+            "friends_count": 492,
+            "listed_count": 1222,
+            "favourites_count": 64,
+            "statuses_count": 5897,
+            "created_at": "Thu Feb 06 13:27:03 +0000 2014",
+            "utc_offset": 3600,
+            "time_zone": "Casablanca",
+            "geo_enabled": false,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "C0DEED",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+            "profile_background_tile": false,
+            "profile_link_color": "0084B4",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/671722036637671424/-2l5Qd-2_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/671722036637671424/-2l5Qd-2_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/2330299633/1449585751",
+            "default_profile": true,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 121,
+        "favorite_count": 95,
+        "entities": {
+            "hashtags": [],
+            "urls": [],
+            "user_mentions": [],
+            "symbols": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "filter_level": "low",
+        "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "entities": {
+        "hashtags": [],
+        "urls": [],
+        "user_mentions": [
+            {
+                "screen_name": "TransferRelated",
+                "name": "Transfer Related",
+                "id": 2330299633,
+                "id_str": "2330299633",
+                "indices": [
+                    3,
+                    19
+                ]
+            }
+        ],
+        "symbols": []
+    },
+    "favorited": false,
+    "retweeted": false,
+    "filter_level": "low",
+    "lang": "en",
+    "timestamp_ms": "1469722174177"
+}
