@@ -185,7 +185,7 @@ stream.on('tweet', function (tweet) {
             //   console.log(`${e}: ${tweets[e].length}`);
             // })
             matches.forEach((e, i, a) => {
-                io.to(e).emit('tweet', Object.assign({themes:values},tweet));
+                io.to(e).emit('tweet', Object.assign({themes:matches},tweet));
             })
         })
 
