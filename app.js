@@ -151,6 +151,7 @@ io.on('connection', function (socket) {
                 sports.push(e.toLowerCase());
             }
         })
+        console.log(`socket rooms ${Object.keys(socket.rooms).join('-')}`);
         console.log(`${socket.id} changed sports to ${sports.join(',')} --`);
         if (callback) {
             callback(themes.reduce((p, c, i, a) => {
@@ -189,6 +190,7 @@ stream.on('tweet', function (tweet) {
             // Object.keys(tweets).forEach((e, i, a) => {
             //   console.log(`${e}: ${tweets[e].length}`);
             // })
+            console.log('tweet');
             matches.forEach((e, i, a) => {
                 io.to(e).emit('tweet', Object.assign({ themes: matches }, tweet));
             })
