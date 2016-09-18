@@ -144,12 +144,14 @@ io.on('connection', function (socket) {
                 socket.leave(room);
             }
         })
+        const sports = [];
         themes.forEach((e, i, a) => {
             if (THEMES[e]) {
                 socket.join(e.toLowerCase());
+                sports.push(e.toLowerCase());
             }
         })
-        // console.log(Object.keys(socket.rooms));
+        console.log(`${socket.id} changed sports to ${sports.join(',')} --`);
         if (callback) {
             callback(themes.reduce((p, c, i, a) => {
                 if (!p[c]) {
