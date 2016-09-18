@@ -151,7 +151,7 @@ io.on('connection', function (socket) {
         })
         // console.log(Object.keys(socket.rooms));
         if (callback) {
-            cb(themes.reduce((p, c, i, a) => {
+            callback(themes.reduce((p, c, i, a) => {
                 if (!p[c]) {
                     p[c] = tweets[c] ? tweets[c].slice(-15) : [];
                 }
