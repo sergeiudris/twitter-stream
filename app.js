@@ -134,7 +134,7 @@ io.on('connection', function (socket) {
         io.emit("message", { id: socket.id, data: o });
     });
     //io.emit("message", { id: "server", msg: `new user connected ${socket.id}` });
-    socket.on('themes', function (themes, cb) {
+    socket.on('themes', function (themes, callback) {
         // io.sockets.connected[socket.id].rooms.forEach((e,i,a)=>{
         //   socket.leave(e);
         // })
@@ -145,17 +145,20 @@ io.on('connection', function (socket) {
             }
         })
         themes.forEach((e, i, a) => {
-            if(THEMES[e]){
+            if (THEMES[e]) {
                 socket.join(e.toLowerCase());
             }
         })
         // console.log(Object.keys(socket.rooms));
-        cb(themes.reduce((p, c, i, a) => {
-            if (!p[c]) {
-                p[c] = tweets[c] ? tweets[c].slice(-15) : [];
-            }
-            return p;
-        }, {}));
+        if (callback) {
+            cb(themes.reduce((p, c, i, a) => {
+                if (!p[c]) {
+                    p[c] = tweets[c] ? tweets[c].slice(-15) : [];
+                }
+                return p;
+            }, {}));
+        }
+
     });
 });
 
@@ -185,7 +188,7 @@ stream.on('tweet', function (tweet) {
             //   console.log(`${e}: ${tweets[e].length}`);
             // })
             matches.forEach((e, i, a) => {
-                io.to(e).emit('tweet', Object.assign({themes:matches},tweet));
+                io.to(e).emit('tweet', Object.assign({ themes: matches }, tweet));
             })
         })
 
