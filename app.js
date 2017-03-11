@@ -196,6 +196,7 @@ stream.on('tweet', function (tweet) {
         })
 
     }
+    io.of('tweet').emit('tweet', tweet)
 })
 
 stream.on('disconnect', function (disconnectMessage) {
