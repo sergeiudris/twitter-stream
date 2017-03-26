@@ -107,7 +107,7 @@ var T = new Twit({
 const streamParams = {
     track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','),
     language: 'en',
-    filter_level: 'medium'
+    // filter_level: 'medium'
 }
 
 var stream = T.stream('statuses/filter', streamParams)
