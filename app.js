@@ -104,7 +104,13 @@ var T = new Twit({
 
 //match({ text: "here is nba nFL" }).then((vs) => { console.log(tweets);console.log(vs) });
 
-var stream = T.stream('statuses/filter', { track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','), language: 'en' })
+const streamParams = {
+    // track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','),
+    language: 'en',
+    filter_level: 'medium'
+}
+
+var stream = T.stream('statuses/filter', streamParams)
 stream.isStopped = false;
 io.on('connection', function (socket) {
     console.log(`${socket.id} connected`);
