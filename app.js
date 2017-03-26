@@ -105,7 +105,7 @@ var T = new Twit({
 //match({ text: "here is nba nFL" }).then((vs) => { console.log(tweets);console.log(vs) });
 
 const streamParams = {
-    // track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','),
+    track: Object.keys(THEMES).map((e) => THEMES[e].join(',')).join(','),
     language: 'en',
     filter_level: 'medium'
 }
