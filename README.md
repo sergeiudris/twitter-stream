@@ -1,2 +1,0 @@
-# sportleafs
-sport tweets stream
